@@ -6,8 +6,8 @@ from api import events, clubs
 app = FastAPI()
 
 app.include_router(events.router)
-app.include_router(clubs.router)
-app.include_router(comments.router)
+# app.include_router(clubs.router)
+# app.include_router(comments.router)
 
 
 @app.get("/")
