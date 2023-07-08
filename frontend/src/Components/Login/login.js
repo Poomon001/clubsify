@@ -3,7 +3,7 @@ import "./login.css"; // Import CSS file for styling
 import { useNavigate, Navigate } from "react-router-dom";
 import Home from "../Home/Home";
 
-const LoginPage = () => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState(false);
@@ -62,4 +62,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

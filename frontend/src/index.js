@@ -8,7 +8,7 @@ import App from "./App";
 import Navigation from "./Components/Navigation/Navigation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ClubPage from "./Components/Club/ClubPage";
-import Login from "./Components/Login/Login";
+import Login from "./Components/Login/login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
