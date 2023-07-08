@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './login.css'; // Import CSS file for styling
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -28,8 +29,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className="login-page">
+      <h2>Clubsify Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
