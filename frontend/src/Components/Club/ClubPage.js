@@ -1,7 +1,15 @@
 import React from "react";
+import Navigation from "../../Navigation/Navigation";
+import Search from "./Search";
+import Cards from "./Cards";
 
 const ClubPage = () => {
-  return <input type="text" placeholder="Search" className="search-bar" />;
+  return (
+    <div>
+      <Search />
+      <Cards />
+    </div>
+  );
 };
 
 export default ClubPage;
