@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <Navbar expand='lg' className="bg-white mb-3" sticky="top" >
             <Container fluid>
-                <Navbar.Brand href="#">Clubsify</Navbar.Brand>
+                <Navbar.Brand href="#" as="h1">Clubsify</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Offcanvas placement="end">
                     <Offcanvas.Header closeButton>
