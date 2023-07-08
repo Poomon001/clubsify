@@ -2,8 +2,9 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import React from "react";
 
-const SingleCard = () => {
-  const getThumbnail = () => {};
+const SingleCard = (prop) => {
+  const uid = prop.uid.toString().padStart(4, "0");
+  console.log(uid);
 
   return (
     <Card style={{ width: "18rem" }}>

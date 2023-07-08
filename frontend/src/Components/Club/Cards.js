@@ -12,8 +12,8 @@ function Cards() {
       <Container fluid>
         <Row auto>
           {colData.map((item, index) => (
-            <Col md={3} xs={6} className="mb-4" key={item}>
-              <SingleCard />
+            <Col md={3} xs={6} className="mb-4" key={index}>
+              <SingleCard uid={index} />
             </Col>
           ))}
         </Row>
