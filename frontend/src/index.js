@@ -8,15 +8,17 @@ import App from "./App";
 import Navigation from "./Components/Navigation/Navigation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ClubPage from "./Components/Club/ClubPage";
+import Login from "./Components/Login/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Login />}></Route>
         <Route path="/clubs" element={<ClubPage />}></Route>
-        {/* <Route path="/" element={<Home />}></Route> */}
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/logout" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

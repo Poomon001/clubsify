@@ -1,31 +1,35 @@
-import React, { useState } from 'react';
-import './login.css'; // Import CSS file for styling
+import React, { useState } from "react";
+import "./login.css"; // Import CSS file for styling
+import { useNavigate, Navigate } from "react-router-dom";
+import Home from "../Home/Home";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState(false);
-  const [loginStatus, setLoginStatus] = useState('');
+  const [loginStatus, setLoginStatus] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Fake username and password for demonstration
-    const fakeUsername = 'poomon';
-    const fakePassword = 'poomon123';
+    const fakeUsername = "poomon";
+    const fakePassword = "poomon123";
 
     // Check if username and password match the fake credentials
     if (username === fakeUsername && password === fakePassword) {
-      setLoginStatus('Login successful');
+      setLoginStatus("Login successful");
+      navigate("./home", { replace: true });
       // Perform further actions, such as redirecting to a different page
     } else {
-      setLoginStatus('Login failed');
+      setLoginStatus("Login failed");
       setLoginError(true);
     }
 
     // Reset the form
-    setUsername('');
-    setPassword('');
+    setUsername("");
+    setPassword("");
   };
 
   return (
