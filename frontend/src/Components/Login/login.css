@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #e6f3ff;
+  background: linear-gradient(135deg, #b3e6cc, #cce6ff);
 }
 
 h2 {
@@ -69,4 +69,3 @@ button:active {
 button:focus {
   outline: none;
 }
-
