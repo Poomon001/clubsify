@@ -76,6 +76,7 @@ function App() {
           description={event.description}
           image={event.image}
           uid={event.uid}
+          //added uid
         />
       ))}
     </div>
