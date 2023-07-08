@@ -1,15 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Home from './Components/Home/Home';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Home from "./Components/Home/Home";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
+import Navigation from "./Components/Navigation/Navigation";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ClubPage from "./Components/Club/ClubPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/clubs" element={<ClubPage />}></Route>
+        {/* <Route path="/" element={<Home />}></Route> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
