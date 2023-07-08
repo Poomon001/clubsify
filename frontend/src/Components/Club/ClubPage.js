@@ -7,7 +7,6 @@ const ClubPage = () => {
   return (
     <>
       <Navigation />
-      <Search />
       <Cards />
     </>
   );
