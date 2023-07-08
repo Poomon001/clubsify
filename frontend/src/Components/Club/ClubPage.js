@@ -5,10 +5,11 @@ import Cards from "./Cards";
 
 const ClubPage = () => {
   return (
-    <div>
+    <>
+      <Navigation />
       <Search />
       <Cards />
-    </div>
+    </>
   );
 };
 
