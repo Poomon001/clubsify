@@ -5,26 +5,19 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
 function Cards() {
+  const colData = [1, 2, 3, 4];
+
   return (
     <div>
-      <section id="blog" className="block blog-block">
-        <Container fluid>
-          <Row>
-            <Col sm={3} key="1">
+      <Container fluid>
+        <Row auto>
+          {colData.map((item, index) => (
+            <Col md={3} xs={6} className="mb-4" key={item}>
               <SingleCard />
             </Col>
-            <Col sm={3} key="2">
-              <SingleCard />
-            </Col>
-            <Col sm={3} key="3">
-              <SingleCard />
-            </Col>
-            <Col sm={3} key="3">
-              <SingleCard />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }

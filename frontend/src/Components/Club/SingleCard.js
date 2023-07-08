@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import React from "react";
 
 const SingleCard = () => {
+  const getThumbnail = () => {};
+
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img

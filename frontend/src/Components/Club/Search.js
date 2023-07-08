@@ -16,11 +16,11 @@ const Search = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Form className="d-flex">
+        <Form className="d-flex w-100">
           <Form.Control
             type="search"
             placeholder="Search"
-            className="w-100"
+            className="me-2"
             aria-label="Search"
           />
           <Button variant="outline-success">Search</Button>
