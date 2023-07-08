@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
+import Navigation from '../Navigation/Navigation';
 
 const Home = () => {
   const [showItems, setShowItems] = useState(false);
@@ -10,9 +11,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="sandwich-bar" onClick={toggleItems}>
-        Sandwich Bar
-      </div>
+      <Navigation />
       {showItems && (
         <div className="sandwich-items">
           <div>Home</div>
