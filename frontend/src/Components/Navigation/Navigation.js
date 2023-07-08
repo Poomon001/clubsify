@@ -19,13 +19,13 @@ function Navigation() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Link to="/" className="nav-link">
+              <Link to="/home" className="nav-link">
                 Home
               </Link>
               <Link to="/clubs" className="nav-link">
                 Clubs
               </Link>
-              <Link to="/logout" className="btn btn-outline-primary">
+              <Link to="/" className="btn btn-outline-primary">
                 Sign out
               </Link>
             </Nav>
