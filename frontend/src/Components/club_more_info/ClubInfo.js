@@ -1,6 +1,6 @@
 import React from "react";
 
-const EventPage = ({
+const ClubPage = ({
   name,
   description,
   phone,
@@ -34,14 +34,14 @@ const EventPage = ({
   );
 };
 
-const App = () => {
+const ClubInfo = () => {
   // Fake data
   const fakeData = [
     {
-      name: "Event 1",
-      description: "Description 1",
+      name: "UVic Programming Club",
+      description: "Uvic programming club focusing on competitive programming",
       phone: "+1234567890",
-      email: "example1@example.com",
+      email: "uvicprog@uvic.com",
       event1: "Event A1",
       event2: "Event B1",
       event3: "Event C1",
@@ -52,10 +52,10 @@ const App = () => {
   return (
     <div>
       {fakeData.map((data, index) => (
-        <EventPage key={index} {...data} />
+        <ClubPage key={index} {...data} />
       ))}
     </div>
   );
 };
 
-export default App;
+export default ClubInfo;

@@ -9,6 +9,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ClubPage from "./Components/Club/ClubPage";
 import Login from "./Components/Login/login";
+import ClubInfo from "./Components/club_more_info/ClubInfo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,8 @@ root.render(
         <Route path="/clubs" element={<ClubPage />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/logout" element={<Login />}></Route>
+        {/* add clubInfo to routes */}
+        <Route path="/clubInfo" element={<ClubInfo />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

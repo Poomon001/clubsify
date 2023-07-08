@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleCard = (prop) => {
   const uid = prop.uid.toString().padStart(4, "0");
@@ -17,9 +18,11 @@ const SingleCard = (prop) => {
         <Card.Text>
           {prop.description}
         </Card.Text>
-        <Button variant="primary">More info</Button>
+        <Link to="/clubInfo" className="btn btn-success">
+          More info
+        </Link>
       </Card.Body>
-    </Card>
+    </Card >
   );
 };
 
