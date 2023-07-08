@@ -19,7 +19,7 @@ const Home = () => {
           <div>New</div>
         </div>
       )}
-      <div className="news">News Component</div>
+
     </div>
   );
 };
