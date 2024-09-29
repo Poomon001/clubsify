@@ -2,7 +2,7 @@
 
 Clubsify
 
-Clubsify revolutionizes campus life by providing students with an intuitive and comprehensive platform that keeps them informed about all the latest events and activities happening on their university campus. With our user-friendly interface and personalized features, students can now stay connected, discover exciting opportunities, and never miss out on the vibrant campus life that their university has to offer.
+Clubsify revolutionizes campus life by providing students with an intuitive and comprehensive platform that keeps them informed about all the latest events and activities happening on their university campus. With our user-friendly interface and personalized features, students can now stay connected, discover exciting opportunities, and never miss out on the vibrant campus life their university offers. Winner Award of UVEC Hackathon in Summer 2023.
 
 Technologies utilized:
 JavaScript,
